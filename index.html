@@ -11,7 +11,7 @@
 <body>
     
     <script>
-         let arr=['OG','Kalki2898AD','RRR','GameChanger','Salaar','KGF']
+        let arr=['OG','Kalki2898AD','RRR','GameChanger','Salaar','KGF']
         //let res=""
         for(i=0;i<arr.length-1;i--){
             //res+=arr[i];
@@ -85,7 +85,28 @@
         console.log(num);
         console.log(obj);
         console.log(bool);
+
+        //problem solving
+       
+        //reverse from 10 to 1
+        for(let a=10;a!=0;a--){
+            console.log(a);
+        }
+        //reverse from -1 to -10
+        for(let a=-1;a!=-11;a--){
+            console.log(a);
+        }
         
+        
+        //sum of digits
+        let num1=123;
+        let sum=String(num1);
+        let sumnum=0;
+        for(j=0;j<sum.length;j++){
+            //console.log(j)
+            sumnum=sumnum+Number(sum[j]);
+        }
+        console.log(sumnum)
     </script>
 </body>
 </html>
