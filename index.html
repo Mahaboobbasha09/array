@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+    
+    <script>
+         let arr=['OG','Kalki2898AD','RRR','GameChanger','Salaar','KGF']
+        //let res=""
+        for(i=0;i<arr.length-1;i--){
+            //res+=arr[i];
+            console.log(arr[i]);
+
+        }
+       let reverse=[];
+        for(val in arr){
+            reverse.unshift(arr[val]);
+        }
+        console.log(reverse);
+        let avr=[];
+        for(let aa of arr){
+            avr.unshift(aa);
+        }
+        console.log(avr)
+
+
+
+        let array=['one','two','three','four','five'];
+        array.shift();
+        array.pop();
+        console.log(array);
+
+        let rev=["Html","CSS","JS","Pb"];
+        for(i=rev.length-1;i>=0;i--){
+            console.log(rev[i]);
+        }
+
+        let number=[12,3,5,6,22,56,29];
+        let evensum=0;
+        let oddsum=0;
+        for(let i in number){
+            //console.log(i);
+            if(number[i]%2==0){
+                console.log(number[i]," is even");
+                evensum+=number[i];
+            }
+            else{
+                console.log(number[i]," is odd")
+                oddsum+=number[i];
+            }
+        }
+        console.log(evensum," is Even sum");
+        console.log(oddsum," is ODD sum");
+
+        let mixed=["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, {name: "object"}]
+        let num=[];
+        let str=[];
+        let obj=[];
+        let bool=[];
+        for(let val of mixed){
+            //console.log(typeof mixed[val]);
+            if(typeof val === "string"){
+                //console.log(val);
+                str.push(val);
+
+            }
+            else if(typeof val === "number"){
+                num.push(val)
+            }
+            else if(typeof val == "object"){
+                obj.push(val);
+            }
+            else if(typeof val == "boolean"){
+                bool.push(val)
+    
+            }
+        }
+        console.log(str);
+        console.log(num);
+        console.log(obj);
+        console.log(bool);
+        
+    </script>
+</body>
+</html>
